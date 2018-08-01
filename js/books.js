@@ -6,7 +6,10 @@ function charts(error, myLibraryData) {
   var ndx = crossfilter(myLibraryData);
 
   showGenres(ndx);
+  showAuthors(ndx);
   showProtGender(ndx);
+  
+  dc.renderAll()
 }
 
 function showGenres(ndx) {
@@ -19,8 +22,6 @@ function showGenres(ndx) {
     .transitionDuration(1500)
     .dimension(dim)
     .group(group)
-
-  dc.renderAll()
 }
 
 function showProtGender(ndx) {
@@ -33,6 +34,23 @@ function showProtGender(ndx) {
     .transitionDuration(1500)
     .dimension(dim)
     .group(group)
+}
 
-  dc.renderAll()
+function showAuthors(ndx) {
+  var dim = ndx.dimension(dc.pluck("author"));
+  var group = dim.group();
+
+dc.barChart("#authors")
+  .width(800)
+  .height(500)
+  .margins ({top: 10, right: 50, bottom: 30, left: 50})
+  .dimension(dim)
+  .group(group)
+  .transitionDuration(500)
+  .x(d3.scale.ordinal())
+  .xUnits(dc.units.ordinal)
+  .elasticY(true)
+  .xAxisLabel("Author")
+  .yAxisLabel("Books")
+  .yAxis().ticks(4)
 }
