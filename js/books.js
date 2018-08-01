@@ -42,8 +42,8 @@ function showAuthors(ndx) {
   var group = dim.group();
 
 dc.barChart("#authors")
-  .width(800)
-  .height(500)
+  .width(600)
+  .height(300)
   .margins ({top: 10, right: 50, bottom: 30, left: 50})
   .dimension(dim)
   .group(group)
@@ -61,7 +61,7 @@ function showLanguage(ndx) {
   var group = dim.group();
 
 dc.barChart("#languages")
-  .width(800)
+  .width(300)
   .height(500)
   .margins ({top: 10, right: 50, bottom: 30, left: 50})
   .dimension(dim)
