@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Library</title>
+  <link rel="stylesheet" href="css/sketchybootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Library</h1>
+  </header>
+  <section class="container-fluid">
+    <div>
+      <h2>Genre</h2>
+      <p>As you can see, a large part of my personal library consists of fantasy stories, but there are other genres present.</p>
+      <div id="genres"></div>
+    </div>
+    <div>
+      <h2>Authors</h2>
+      <p>This will be a bar chart</p>
+      <div id="author"></div>
+    </div>
+    <div>
+      <h2>Series vs Stand-Alone</h2>
+      <p>To avoid skewing due to long series, a series gets counted only once, by selecting the first one in the series. This will be a bar chart.</p>
+      <div id="seriesOrNot"></div>
+    </div>
+    <div>
+      <h2>Protagonist's Gender</h2>
+      <p>A word of explanation about the Gender chart:</p>
+      <ul>
+        <li> Male is a male protagonist and Female is a female main character, that much is obvious.</li>
+        <li>Multiple stands for multiple main characters of different genders, especially when the story is told from multiple
+          characters' point of view or the book is a collections of short stories.</li>
+        <li>None is a book without a protagonist, such as an encyclopedia or other educational materials.</li>
+      </ul>
+      <div id="protGender"></div>
+    </div>
+    <div>
+      <h2>Languages</h2>
+      <p>Dutch and English, mainly.</p>
+      this can be a bar chart or a circle chart.
+      <div id="languages"></div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+  <script src="js/books.js"></script>
+</body>
+
+</html>
