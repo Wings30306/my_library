@@ -8,6 +8,7 @@ function charts(error, myLibraryData) {
   showGenres(ndx);
   showAuthors(ndx);
   showProtGender(ndx);
+  showLanguage(ndx);
   
   dc.renderAll()
 }
@@ -53,4 +54,23 @@ dc.barChart("#authors")
   .xAxisLabel("Author")
   .yAxisLabel("Books")
   .yAxis().ticks(4)
+}
+
+function showLanguage(ndx) {
+  var dim = ndx.dimension(dc.pluck("language"));
+  var group = dim.group();
+
+dc.barChart("#languages")
+  .width(800)
+  .height(500)
+  .margins ({top: 10, right: 50, bottom: 30, left: 50})
+  .dimension(dim)
+  .group(group)
+  .transitionDuration(500)
+  .x(d3.scale.ordinal())
+  .xUnits(dc.units.ordinal)
+  .elasticY(false)
+  .xAxisLabel("Language")
+  .yAxisLabel("Books")
+  .yAxis().ticks(10)
 }
