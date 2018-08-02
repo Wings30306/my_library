@@ -12,3 +12,12 @@ p {
 #authors .x.axis text {
   display:none;
 }
+
+.col-sm-4, .col-sm-6, .col-sm-8 {
+  border: 4px double lightgoldenrodyellow;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
