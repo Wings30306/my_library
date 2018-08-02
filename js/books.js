@@ -1,5 +1,5 @@
 queue()
-.defer(d3.csv, "data/mylibrary.csv")
+.defer(d3.json, "data/mylibrary.json")
 .await(charts);
 
 function charts(error, myLibraryData) {
@@ -26,7 +26,7 @@ function showGenres(ndx) {
 }
 
 function showProtGender(ndx) {
-  var dim = ndx.dimension(dc.pluck("genderProtagonist"));
+  var dim = ndx.dimension(dc.pluck("Gender main character"));
   var group = dim.group();
 
   dc.pieChart("#protGender")

@@ -8,3 +8,7 @@ h2 {
 p {
   float: none;
 }
+
+#authors .x.axis text {
+  display:none;
+}
