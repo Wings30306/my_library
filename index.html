@@ -15,10 +15,8 @@
 <body>
   <div class="container-fluid">
 
-    <header class="row header">
-      <div class="col-xs-12">
+    <header class="header">
         <h1>My Library</h1>
-      </div>
     </header>
     <section>
       <div class="row row1">
@@ -54,10 +52,10 @@
             <li>Multiple stands for multiple main characters of different genders. This applies when the story is told from multiple
               characters' point of view or the book is a collection of short stories.</li>
             <li>None is a book without a protagonist, such as an encyclopedia, a historical account or other educational materials.</li>
-          </ul>
-          <p>Note: When applicable, trans and gender-fluid protagonists will also be added here, but I don't currently have
-            books with either in my library.</p>
+          </ul>          
           <div id="protGender"></div>
+          <p class="note">Note: When applicable, trans and gender-fluid protagonists will also be added here, but I don't currently have
+            books with either in my library.</p>
         </div>
         <div class="col-sm-6 col-md-4">
           <h2>Languages</h2>
@@ -71,10 +69,19 @@
       <div class="search-collection">
         <h2>Table of Books</h2>
         <h5>Use the charts above to make your selection.</h5>
-        <div id="allBooks"></div>
+        <table id="allBooks">
+          <thead>
+            <tr>
+              <th>Author</th>
+              <th>Title</th>
+              <th>Series</th>
+              <th>Genre</th>
+            </tr>
+          </thead>
+        </table>
       </div>
     </section>
-    <footer class="row">
+    <footer>
       <p>Created by Joke Heyndels.</p>
     </footer>
   </div>

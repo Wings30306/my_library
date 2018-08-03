@@ -4,16 +4,40 @@ body {
 }
 
 
-header {
+.header h1 {
   background-color: black;
   color: lightgoldenrodyellow;
   text-align: center;
+  font-size: 200px;
 }
 
-h1, h2, h5 {
+/* Font sizes */
+
+h2, h5 {
   text-align: center;
 }
 
+h2 {
+  font-size: 60px
+}
+
+h5 {
+  font-size: 30px
+}
+
+p {
+  font-size: 25px;
+  clear: both;
+}
+
+li {
+  font-size: 20px
+}
+
+.note {
+  font-size: 18px;
+  text-align: justify;
+}
 
 
 #authors .x.axis text {
@@ -61,6 +85,3 @@ footer{
   background-color: black;
 }
 
-.btn-secondary {
-  float: left;
-}

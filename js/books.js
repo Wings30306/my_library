@@ -131,15 +131,12 @@ function showTable(ndx) {
   var group = dim.group();
 
   dc.dataTable("#allBooks")
-  .chart
-  .columns([
-    function(d) { return d.title; },
+  .chart.columns([
     function(d) { return d.author; },
+    function(d) { return d.title; },
     function(d) { return d.series; },
     function(d) { return d.genre; },])
   .group(group)
-  .group(function(d) {return d.author;})
-  .showGroups(true)
   .sortBy(function(d) {
     return d.author;
   })
