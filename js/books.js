@@ -10,6 +10,7 @@ function charts(error, myLibraryData) {
   showProtGender(ndx);
   showLanguage(ndx);
   showSeries(ndx);
+  showNumberOfSeries(ndx)
   
   dc.renderAll()
 }
@@ -45,7 +46,7 @@ function showAuthors(ndx) {
 dc.barChart("#authors")
   .width(600)
   .height(300)
-  .margins ({top: 10, right: 50, bottom: 30, left: 50})
+  .margins ({top: 10, right: 10, bottom: 30, left: 30})
   .dimension(dim)
   .group(group)
   .transitionDuration(500)
@@ -64,7 +65,7 @@ function showLanguage(ndx) {
 dc.barChart("#languages")
   .width(300)
   .height(500)
-  .margins ({top: 10, right: 50, bottom: 30, left: 50})
+  .margins ({top: 10, right: 10, bottom: 30, left: 30})
   .dimension(dim)
   .group(group)
   .transitionDuration(500)
@@ -85,7 +86,7 @@ function showSeries(ndx) {
 dc.barChart("#seriesOrNot")
   .width(300)
   .height(500)
-  .margins ({top: 10, right: 50, bottom: 30, left: 50})
+  .margins ({top: 10, right: 10, bottom: 30, left: 30})
   .dimension(dim)
   .group(group)
   .transitionDuration(500)
@@ -97,3 +98,29 @@ dc.barChart("#seriesOrNot")
   .yAxis().ticks(10)
 }
 
+function showNumberOfSeries(ndx) {
+  var totalSeries = ndx.groupAll().reduce(
+    function (p, v) {
+      if (v.number === 1) {
+        p.isSeries++
+      } 
+      return p;
+    },
+    function (p, v) {
+      if (v.number === 1) {
+        p.isSeries--;
+      } 
+      return p;
+    },
+    function () {
+      return {isSeries: 0};
+    },
+  )
+
+  dc.numberDisplay("#numberOfSeries") 
+    .formatNumber(d3.format("1"))
+    .valueAccessor(function(d){
+      return (d.isSeries);
+    })
+    .group(totalSeries)
+}

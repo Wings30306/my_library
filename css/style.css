@@ -1,10 +1,19 @@
+
+body {
+  background-color: black;
+}
+
+
 header {
-  background-color: lightgoldenrodyellow;
-  text-align: center
+  background-color: black;
+  color: lightgoldenrodyellow;
+  text-align: center;
 }
-h2 {
-  clear:both;
+
+h1, h2 {
+  text-align: center;
 }
+
 p {
   float: none;
 }
@@ -13,11 +22,32 @@ p {
   display:none;
 }
 
-.col-sm-4, .col-sm-6, .col-sm-8 {
-  border: 4px double lightgoldenrodyellow;
+.col-sm-6, .col-sm-12 {
+  background-color: lightgoldenrodyellow;
+  border: 10px solid black;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  padding: 10px
+}
+
+
+#seriesOrNot {
+  width: 100%;
+}
+
+.search-collection {
+  background-color: lightgoldenrodyellow;
+}
+
+footer {
+  text-align: right;
+  color: white;
+  background-color: black;
+}
+
+.btn-secondary {
+  float: left;
 }
