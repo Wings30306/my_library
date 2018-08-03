@@ -10,7 +10,8 @@ function charts(error, myLibraryData) {
   showProtGender(ndx);
   showLanguage(ndx);
   showSeries(ndx);
-  showNumberOfSeries(ndx)
+  showNumberOfSeries(ndx);
+  
   
   dc.renderAll()
 }
@@ -123,4 +124,25 @@ function showNumberOfSeries(ndx) {
       return (d.isSeries);
     })
     .group(totalSeries)
+}
+
+function showTable(ndx) {
+  var dim = ndx.dimension();
+  var group = dim.group();
+
+  dc.dataTable("#allBooks")
+  .chart
+  .columns([
+    function(d) { return d.title; },
+    function(d) { return d.author; },
+    function(d) { return d.series; },
+    function(d) { return d.genre; },])
+  .group(group)
+  .group(function(d) {return d.author;})
+  .showGroups(true)
+  .sortBy(function(d) {
+    return d.author;
+  })
+
+
 }

@@ -41,8 +41,9 @@
           <div id="seriesOrNot"></div>
 
           <p>But some of these series are quite long. How many series do I
-            <em>really</em> own?</p>
-          <div id="numberOfSeries"></div>
+            <em>really</em> own?
+            <span id="numberOfSeries"></span>
+          </p>
         </div>
         <div class="col-sm-6 col-md-4">
           <h2>Protagonist's Gender</h2>
@@ -67,54 +68,14 @@
           <div id="languages"></div>
         </div>
       </div>
-      <div class="row search-collection">
-        <div class="col-sm-12">
-          <h3>Search for a random book in collection by:</h3>
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Language
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item">Dutch</li>
-              <li class="dropdown-item">English</li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Gender of Main Character
-            </button>
-            <ul class="dropdown-menu select-picker" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item">Male</li>
-              <li class="dropdown-item">Female</li>
-              <li class="dropdown-item">Multiple</li>
-              <li class="dropdown-item">None</li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Series or Stand-Alone
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropdown-item">Series</li>
-              <li class="dropdown-item">Stand-Alone</li>
-            </ul>
-          </div>
-          <button class="btn btn-primary" type="submit">SEARCH</button>
-          <p>Your Book:
-            <span id="searchResult"></span>
-          </p>
-          <h4>Happy Reading!</h4>
-        </div>
+      <div class="search-collection">
+        <h2>Table of Books</h2>
+        <h5>Use the charts above to make your selection.</h5>
+        <div id="allBooks"></div>
       </div>
     </section>
     <footer class="row">
-      <div class="col-xs-12">
-        <p>Created by Joke Heyndels.</p>
-      </div>
+      <p>Created by Joke Heyndels.</p>
     </footer>
   </div>
 

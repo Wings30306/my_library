@@ -10,13 +10,11 @@ header {
   text-align: center;
 }
 
-h1, h2 {
+h1, h2, h5 {
   text-align: center;
 }
 
-p {
-  float: none;
-}
+
 
 #authors .x.axis text {
   display:none;
@@ -38,12 +36,27 @@ p {
   width: 100%;
 }
 
-.search-collection {
-  background-color: lightgoldenrodyellow;
+#numberOfSeries {
+  text-align: center;
+  margin: 0 auto;
+  border: 3px double black;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 30px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 
-footer {
-  text-align: right;
+.search-collection {
+  background-color: lightgoldenrodyellow;
+  min-height: 5vh;
+}
+
+footer{
+  text-align: center;
   color: white;
   background-color: black;
 }
