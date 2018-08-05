@@ -13,27 +13,57 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-
-    <header class="header">
-        <h1>My Library</h1>
+    <header class="container-fluid">
+      <h1>My Library</h1>
+      <nav class="row">
+        <a href="#authors-div" class="col-4 col-md-2">
+          <nav-item>
+            Authors
+          </nav-item>
+        </a>
+        <a href="#genres-div" class="col-4 col-md-2">
+          <nav-item>
+            Genres
+          </nav-item>
+        </a>
+        <a href="#series-div" class="col-4 col-md-2">
+          <nav-item>
+            Series or Stand-Alone
+          </nav-item>
+        </a>
+        <a href="#gender-div" class="col-4 col-md-2">
+          <nav-item>
+            Protagonist's Gender
+          </nav-item>
+        </a>
+        <a href="#languages-div" class="col-4 col-md-2">
+          <nav-item>
+            Languages
+          </nav-item>
+        </a>
+        <a href="#all-books-div" class="col-4 col-md-2">
+          <nav-item>
+            All Books
+          </nav>
+        </a>
+      </nav>
     </header>
-    <section>
+    <section class="container-fluid">
       <div class="row row1">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-8 chart" id="authors-div">
           <h2>Authors</h2>
           <p>Not much explanation here, this just shows the balance of books by author. I have some clearly defined favourites,
             obviously!
           </p>
           <div id="authors"></div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-4 chart" id="genres-div">
           <h2>Genre</h2>
           <p>As you can see, a large part of my personal library consists of fantasy stories, but there are other genres present.</p>
           <div id="genres"></div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-4 chart" id="series-div">
           <h2>Series vs Stand-Alone</h2>
           <p>When we count each book separately, it shows that it's a close run between Series and Stand-Alones.</p>
           <div id="seriesOrNot"></div>
@@ -43,7 +73,7 @@
             <span id="numberOfSeries"></span>
           </p>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-4 chart" id="gender-div">
           <h2>Protagonist's Gender</h2>
           <p>A word of explanation about the Gender chart:</p>
           <ul>
@@ -52,12 +82,12 @@
             <li>Multiple stands for multiple main characters of different genders. This applies when the story is told from multiple
               characters' point of view or the book is a collection of short stories.</li>
             <li>None is a book without a protagonist, such as an encyclopedia, a historical account or other educational materials.</li>
-          </ul>          
+          </ul>
           <div id="protGender"></div>
           <p class="note">Note: When applicable, trans and gender-fluid protagonists will also be added here, but I don't currently have
             books with either in my library.</p>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-4 chart" id="languages-div">
           <h2>Languages</h2>
           <p>As a native speaker of Dutch, of course my library has a number of books in that language.</p>
           <p>However, my prefered language for reading in recent years has been English. Let's find out how those balance out,
@@ -66,19 +96,12 @@
           <div id="languages"></div>
         </div>
       </div>
-      <div class="search-collection">
-        <h2>Table of Books</h2>
-        <h5>Use the charts above to make your selection.</h5>
-        <table id="allBooks">
-          <thead>
-            <tr>
-              <th>Author</th>
-              <th>Title</th>
-              <th>Series</th>
-              <th>Genre</th>
-            </tr>
-          </thead>
-        </table>
+      <div class="search-collection container-fluid" id="all-books-div">
+        <button onclick="">
+          <h5>Show Complete Collection</h5>
+        </button>
+        <div id="allBooks">
+        </div>
       </div>
     </section>
     <footer>

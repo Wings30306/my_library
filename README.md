@@ -12,7 +12,7 @@ It's been very interesting to find out exactly how the languages and genres stac
  
 With this many books to choose from, it's no wonder that sometimes it's hard to pick just one. For that reason, I really wanted to use this website to make it easier on myself by using the charts to cut down the selection according to what I'm currently in the mood for: which language, which genre, whether I want to read a series or not.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+I did create some [wireframes](wireframes/original-version) but on screen the layout didn't look as nice as I thought it would. I've since changed it, added an extra chart and the table at the bottom instead of the search buttons as a more practical alternative.
 
 ## Features
  
@@ -59,15 +59,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+This project was deployed via Github pages.
 
 ## Credits
 
@@ -79,4 +71,6 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- Many thanks to my fellow student Simen for the tip about overflow to keep this site as responsive as possible in spite of the non-responsiveness of the dc charts.
+- [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) has been a very helpful tool in converting an Excel file to usable JSON data format. 
+- Bootswatch's lovely theme Sketchy supplied the typography. 

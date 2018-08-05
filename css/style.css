@@ -1,50 +1,31 @@
+/* Backgrounds */
 
 body {
   background-color: black;
+  margin: 0;
+  padding:0;
 }
 
-
-.header h1 {
+header {
   background-color: black;
   color: lightgoldenrodyellow;
   text-align: center;
-  font-size: 200px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-/* Font sizes */
-
-h2, h5 {
-  text-align: center;
+section {
+  margin-top: 200px
 }
 
-h2 {
-  font-size: 60px
+nav-item {
+  color: lightgoldenrodyellow;
 }
 
-h5 {
-  font-size: 30px
-}
-
-p {
-  font-size: 25px;
-  clear: both;
-}
-
-li {
-  font-size: 20px
-}
-
-.note {
-  font-size: 18px;
-  text-align: justify;
-}
-
-
-#authors .x.axis text {
-  display:none;
-}
-
-.col-sm-6, .col-sm-12 {
+.col-sm-6,
+.col-sm-12 {
   background-color: lightgoldenrodyellow;
   border: 10px solid black;
   border-radius: 15px;
@@ -55,6 +36,26 @@ li {
   padding: 10px
 }
 
+/* Alignment */
+
+h2,
+h5 {
+  text-align: center;
+}
+
+p {
+  clear: both;
+}
+
+/* Charts */
+.chart{
+  overflow: auto;
+}
+
+#genres g .pie-label-group text,
+#authors .x.axis text {
+  display: none;
+}
 
 #seriesOrNot {
   width: 100%;
@@ -74,14 +75,44 @@ li {
   -o-border-radius: 10%;
 }
 
-.search-collection {
+.search-collection button{
   background-color: lightgoldenrodyellow;
   min-height: 5vh;
+  width: 100%;
 }
 
-footer{
+footer {
   text-align: center;
   color: white;
   background-color: black;
 }
 
+/*Responsiveness */
+
+@media screen and (min-width: 1200px) {
+  section {
+    margin-top: 300px
+  }
+  h1 {
+    font-size: 200px;
+  }
+  h2 {
+    font-size: 60px
+  }
+  h5 {
+    font-size: 30px
+  }
+  p {
+    font-size: 25px;
+  }
+  li {
+    font-size: 20px
+  }
+  .note {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .chart {
+    overflow-x: hidden;
+  }
+}
