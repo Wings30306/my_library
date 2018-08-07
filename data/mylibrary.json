@@ -1374,22 +1374,11 @@
     "in collection": "true"
   },
   {
-    "title": "That Loving Feeling",
+    "title": "With Love at Christmas",
     "author": "Matthews",
     "language": "English",
     "series": "Series",
     "number": 2,
-    "Gender main character": "female",
-    "Adult": "true",
-    "genre": "christmas",
-    "in collection": "true"
-  },
-  {
-    "title": "With Love at Christmas",
-    "author": "Matthews",
-    "language": "English",
-    "series": "Stand-Alone",
-    "number": null,
     "Gender main character": "female",
     "Adult": "true",
     "genre": "christmas",
@@ -1550,7 +1539,7 @@
     "in collection": "true"
   },
   {
-    "title": "The Robot van de Rommelmarkt",
+    "title": "De Robot van de Rommelmarkt",
     "author": "Dragt",
     "language": "Dutch",
     "series": "Series",
