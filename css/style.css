@@ -95,17 +95,36 @@ p {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 30px;
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
 }
 
-.search-collection button{
-  background-color: lightgoldenrodyellow;
-  min-height: 5vh;
+#all-books-div {
+  padding: 0;
+  margin: 0;
+}
+/*Table*/
+
+table {
+  text-align: left;
+  background-color: gold;
+  border-collapse: separate;
   width: 100%;
+  margin: 0;
+  padding: 0
+}
+
+th {
+  text-transform: uppercase;
+}
+
+/*Reset*/
+
+#reset {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#reset a {
+  text-decoration: none;
 }
 
 /*Responsiveness */

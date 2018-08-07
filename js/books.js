@@ -12,7 +12,7 @@ function charts(error, myLibraryData) {
   showLanguage(ndx);
   showSeries(ndx);
   showNumberOfSeries(ndx);
-  showTable(ndx);
+  showTable(ndx)
   
   dc.renderAll()
 }
@@ -147,6 +147,8 @@ function showNumberOfSeries(ndx) {
     .group(totalSeries)
 }
 
+/*Table function completed with the help of Nakita of the Tutor team.
+My original code on last save: 
 
 function showTable(ndx) {
 
@@ -155,6 +157,47 @@ function showTable(ndx) {
   .group(function(d) {return d['title']})
   .order(d3.ascending)
   .size(213)
+}
 
 
+Nakita's code: 
+
+function showTable(ndx) {
+  var dim = ndx.dimension(dc.pluck('title'));
+  dc.dataTable("#allBooks")
+  .dimension(dim)
+  .group(function(d) {
+    return '';
+  })
+  .columns([
+    "title",
+    "author",
+    "language",
+    "series",
+    "number",
+    "Gender main character",
+    "Adult",
+    "genre",
+    "in collection"
+    ])
+  .size(213)
+  .order(d3.ascending);
+}
+
+*/
+function showTable(ndx) {
+  var dim = ndx.dimension(dc.pluck('author'));
+  dc.dataTable("#allBooks")
+  .dimension(dim)
+  .group(function(d) {
+    return '';
+  })
+  .columns([
+    "title",
+    "author",
+    "language",
+    "genre",
+    ])
+  .size(213)
+  .order(d3.ascending);
 }

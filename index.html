@@ -14,42 +14,47 @@
 </head>
 
 <body>
-  <a href="#"><div class="home"><i class="fa fa-home"></i></div></a>
+  <a href="#">
+    <div class="home">
+      <i class="fa fa-home"></i>
+    </div>
+  </a>
   <header class="container-fluid">
-    <h1>My Library</h1><nav class="row">
-    <a href="#authors-div" class="col-4 col-md-2">
-      <nav-item>
-        Authors
-      </nav-item>
-    </a>
-    <a href="#genres-div" class="col-4 col-md-2">
-      <nav-item>
-        Genres
-      </nav-item>
-    </a>
-    <a href="#series-div" class="col-4 col-md-2">
-      <nav-item>
-        Series or Stand-Alone
-      </nav-item>
-    </a>
-    <a href="#gender-div" class="col-4 col-md-2">
-      <nav-item>
-        Protagonist's Gender
-      </nav-item>
-    </a>
-    <a href="#languages-div" class="col-4 col-md-2">
-      <nav-item>
-        Languages
-      </nav-item>
-    </a>
-    <a href="#all-books-div" class="col-4 col-md-2">
-      <nav-item>
-        All Books
-      </nav-item>
-    </a>
-  </nav>
+    <h1>My Library</h1>
+    <nav class="row">
+      <a href="#authors-div" class="col-4 col-md-2">
+        <nav-item>
+          Authors
+        </nav-item>
+      </a>
+      <a href="#genres-div" class="col-4 col-md-2">
+        <nav-item>
+          Genres
+        </nav-item>
+      </a>
+      <a href="#series-div" class="col-4 col-md-2">
+        <nav-item>
+          Series or Stand-Alone
+        </nav-item>
+      </a>
+      <a href="#gender-div" class="col-4 col-md-2">
+        <nav-item>
+          Protagonist's Gender
+        </nav-item>
+      </a>
+      <a href="#languages-div" class="col-4 col-md-2">
+        <nav-item>
+          Languages
+        </nav-item>
+      </a>
+      <a href="#all-books-div" class="col-4 col-md-2">
+        <nav-item>
+          All Books
+        </nav-item>
+      </a>
+    </nav>
   </header>
-  
+
   <section class="container-fluid">
     <div class="row row1">
       <div class="col-sm-12 col-md-8 chart" id="authors-div">
@@ -97,9 +102,16 @@
         </p>
         <div id="languages"></div>
       </div>
-    </div>
-    <div class="search-collection container-fluid col-sm-12" id="all-books-div">
-      <div id="allBooks">
+
+      <div class="chart col-sm-12" id="all-books-div">
+        <h2>Selected Books</h2>
+        <table id="allBooks">
+          <thead>
+          </thead>
+        </table>
+      </div>
+      <div class="chart col-sm-12" id="reset">
+        <a href="javascript:dc.filterAll(); dc.renderAll();"><h2>Reset Selection</h2></a>
       </div>
     </div>
   </section>
@@ -118,7 +130,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-  <script src="js/layout.js"></script>
   <script src="js/books.js"></script>
 </body>
 
