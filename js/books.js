@@ -12,7 +12,8 @@ function charts(error, myLibraryData) {
   showLanguage(ndx);
   showSeries(ndx);
   showNumberOfSeries(ndx);
-
+  showTable(ndx);
+  
   dc.renderAll()
 }
 
@@ -148,19 +149,12 @@ function showNumberOfSeries(ndx) {
 
 
 function showTable(ndx) {
-  var dim = ndx.dimension();
-  var group = dim.group();
 
   dc.dataTable("#allBooks")
-  .columns([
-    function(d) { return d.author; },
-    function(d) { return d.title; },
-    function(d) { return d.series; },
-    function(d) { return d.genre; },])
-  .group(group)
-  .sortBy(function(d) {
-    return d.author;
-  })
+  .dimension(ndx)
+  .group(function(d) {return d['title']})
+  .order(d3.ascending)
+  .size(213)
 
 
 }
