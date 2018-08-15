@@ -107,13 +107,23 @@ table {
   text-align: left;
   background-color: gold;
   border-collapse: separate;
+  border: 1px;
   width: 100%;
   margin: 0;
   padding: 0
 }
 
-th {
+
+
+table th {
   text-transform: uppercase;
+  font-family: "Cabin Sketch", cursive;
+  background-color: lightgoldenrodyellow;
+}
+
+table td {
+  text-transform: capitalize;
+  background-color: lightgoldenrodyellow;
 }
 
 /*Reset*/
@@ -140,8 +150,9 @@ th {
   h5 {
     font-size: 30px
   }
-  p {
+  p, th, td {
     font-size: 25px;
+    padding: 5px;
   }
   li {
     font-size: 20px

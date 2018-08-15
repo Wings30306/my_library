@@ -24,6 +24,7 @@ The main features of this site are the different charts:
 - Series vs Standalone: a bar chart comparing total number of books that are part of a series to the total number of books that are stand-alones. Included in this is also a number display showing the actual total number of series present.
 - Protagonist's Gender: a pie chart detailing the main characters' gender: male, female, multiple (for books written from alternating points of view and collections of short stories) and none (for books without a main character).
 - Languages: Dutch and English. Dutch is my native language, but does it show in my collection?
+- Selected books: a table which lists the books selected in the other charts.
 
 ### Features Left to Implement
 
@@ -33,8 +34,7 @@ What I would really love to add in future is a search option that picks a random
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- 
 
 
 ## Testing
@@ -71,6 +71,7 @@ This project was deployed via Github pages.
 
 ### Acknowledgements
 
-- Many thanks to my fellow student Simen for the tip about overflow to keep this site as responsive as possible in spite of the non-responsiveness of the dc charts.
+- Many thanks to my fellow student Simen for the reminder/tip about overflow to keep this site as responsive as possible in spite of the non-responsiveness of the dc charts.
+- Nakita McCool of the Code Institute Tutor team, THANKS A MILLION for the help with getting that datatable sorted.
 - [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) has been a very helpful tool in converting an Excel file to usable JSON data format. 
 - Bootswatch's lovely theme Sketchy supplied the typography. 

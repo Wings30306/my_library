@@ -17,6 +17,8 @@ function charts(error, myLibraryData) {
   dc.renderAll()
 }
 
+
+
 function showGenres(ndx) {
   var dim = ndx.dimension(dc.pluck("genre"));
   var group = dim.group();
@@ -198,6 +200,6 @@ function showTable(ndx) {
     "language",
     "genre",
     ])
-  .size(213)
-  .order(d3.ascending);
+  .size(214)
+  .order(d3.ascending)
 }
