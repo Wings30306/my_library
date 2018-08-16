@@ -17,7 +17,8 @@ function charts(error, myLibraryData) {
   dc.renderAll()
 }
 
-
+let myTransTimeVariable = 500
+var myWidthVariable = 250
 
 function showGenres(ndx) {
   var dim = ndx.dimension(dc.pluck("genre"));
@@ -25,12 +26,12 @@ function showGenres(ndx) {
 
   dc.pieChart("#genres")
     .height(300)
-    .width(400)
-    .radius(100)
-    .transitionDuration(1500)
+    .width(myWidthVariable)
+    .radius(myWidthVariable/2)
+    .transitionDuration(myTransTimeVariable)
     .dimension(dim)
     .group(group)
-    .legend(dc.legend())
+    .legend(dc.legend().gap(7))
 }
 
 function showProtGender(ndx) {
@@ -39,8 +40,9 @@ function showProtGender(ndx) {
 
   dc.pieChart("#protGender")
     .height(300)
-    .radius(100)
-    .transitionDuration(1500)
+    .width(myWidthVariable)
+    .radius(myWidthVariable/2)
+    .transitionDuration(myTransTimeVariable)
     .dimension(dim)
     .group(group)
     .legend(dc.legend())
@@ -51,7 +53,7 @@ function showAuthors(ndx) {
   var group = dim.group();
 
   dc.barChart("#authors")
-    .width(600)
+    .width(myWidthVariable)
     .height(300)
     .margins({
       top: 10,
@@ -61,7 +63,7 @@ function showAuthors(ndx) {
     })
     .dimension(dim)
     .group(group)
-    .transitionDuration(500)
+    .transitionDuration(myTransTimeVariable)
     .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
     .elasticY(true)
@@ -75,7 +77,7 @@ function showLanguage(ndx) {
   var group = dim.group();
 
   dc.barChart("#languages")
-    .width(300)
+    .width(myWidthVariable)
     .height(500)
     .margins({
       top: 10,
@@ -85,7 +87,7 @@ function showLanguage(ndx) {
     })
     .dimension(dim)
     .group(group)
-    .transitionDuration(500)
+    .transitionDuration(myTransTimeVariable)
     .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
     .elasticY(false)
@@ -101,7 +103,7 @@ function showSeries(ndx) {
 
 
   dc.barChart("#seriesOrNot")
-    .width(300)
+    .width(myWidthVariable)
     .height(500)
     .margins({
       top: 10,
@@ -111,7 +113,7 @@ function showSeries(ndx) {
     })
     .dimension(dim)
     .group(group)
-    .transitionDuration(500)
+    .transitionDuration(myTransTimeVariable)
     .x(d3.scale.ordinal())
     .xUnits(dc.units.ordinal)
     .elasticY(false)
@@ -147,6 +149,7 @@ function showNumberOfSeries(ndx) {
       return (d.isSeries);
     })
     .group(totalSeries)
+    .transitionDuration(0)
 }
 
 /*Table function completed with the help of Nakita of the Tutor team.
@@ -202,4 +205,6 @@ function showTable(ndx) {
     ])
   .size(214)
   .order(d3.ascending)
+  .transitionDuration(myTransTimeVariable)
 }
+
