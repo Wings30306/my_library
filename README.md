@@ -34,40 +34,47 @@ What I would really love to add in future is a search option that picks a random
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- 
+- [HTML](https://en.wikipedia.org/wiki/HyperText_Markup_Language) for rendering the page
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) for personal touches to lay-out
+- [Bootstrap](https://getbootstrap.com/) for the grid, which makes the page mobile friendly, insofar as the non-responsive charts allow.
+- [Bootswatch](https://bootswatch.com/) for the theme. I chose [Sketchy](https://bootswatch.com/sketchy/) for the hand-written yet still legible look.
+- [JSON](https://www.json.org/) for the data structure, at the recommendation of Moosa Hassan.
+- for rendering the charts:
+  1. [D3](https://d3js.org/)
+  1. [JQuery](http://jquery.com/)
+  1. [Popper](https://popper.js.org/)
+  1. [Crossfilter](http://square.github.io/crossfilter/)
+  1. [DC](https://dc-js.github.io/dc.js/)
+  1. [Queue](https://github.com/d3/d3-queue)
+- And of course the main requirement for this project: [JavaScript](https://www.javascript.com/) for getting the actual data into the charts
+
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+I've run the code through the [html-validator](https://validator.w3.org/). No problems were shown.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+---
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+I also checked the CSS through the [css-validator](http://jigsaw.w3.org/css-validator/). This showed several warnings and errors, mainly in the linked files for bootstrap, bootswatch and such. For my own CSS-file, it showed the following warnings:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+![alt text][warnings]
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+[warnings]: testing/w3c_css_validation_warnings.png "CSS Warnings"
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+However, I decided to leave these in because they are necessary in older browsers and the extra tags don't appear to be causing any harm in the newer ones that don't require them. 
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+---
+
+In terms of Javascript, there wasn't that much to test as I mostly made use of the existing d3 and dc libraries and the graphs and table rendering was test enough. 
+
+However, I did notice the table has an out-of-place line at the top in Google Chrome. Other browsers do sort the datatable properly, and I've been reliably informed this is a known issue in Chrome. 
 
 ## Deployment
 
 This project was deployed via Github pages.
 
 ## Credits
-
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
-### Media
-- The photos used in this site were obtained from ...
 
 ### Acknowledgements
 
