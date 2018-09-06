@@ -204,6 +204,7 @@ function showTable(ndx) {
     "genre",
     ])
   .size(214)
+  .sortBy(function(d) { return d.author; })
   .order(d3.ascending)
   .transitionDuration(myTransTimeVariable)
 }
