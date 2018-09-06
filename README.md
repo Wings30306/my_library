@@ -78,7 +78,7 @@ This project was deployed via Github pages.
 
 ### Acknowledgements
 
-- Many thanks to my fellow student Simen for the reminder/tip about overflow to keep this site as responsive as possible in spite of the non-responsiveness of the dc charts.
+- Many thanks to my fellow student [Simen Daehlin](https://github.com/Eventyret) for the reminder/tip about overflow to keep this site as responsive as possible in spite of the non-responsiveness of the dc charts.
 - Nakita McCool of the Code Institute Tutor team, THANKS A MILLION for the help with getting that datatable sorted.
 - [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) has been a very helpful tool in converting an Excel file to usable JSON data format. 
 - Bootswatch's lovely theme Sketchy supplied the typography. 
