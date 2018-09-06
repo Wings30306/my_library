@@ -26,7 +26,7 @@ function showGenres(ndx) {
 
   dc.pieChart("#genres")
     .height(300)
-    .width(myWidthVariable)
+    .width(myWidthVariable*1.5)
     .radius(myWidthVariable/2)
     .transitionDuration(myTransTimeVariable)
     .dimension(dim)
@@ -40,7 +40,7 @@ function showProtGender(ndx) {
 
   dc.pieChart("#protGender")
     .height(300)
-    .width(myWidthVariable)
+    .width(myWidthVariable*1.5)
     .radius(myWidthVariable/2)
     .transitionDuration(myTransTimeVariable)
     .dimension(dim)
@@ -53,7 +53,7 @@ function showAuthors(ndx) {
   var group = dim.group();
 
   dc.barChart("#authors")
-    .width(myWidthVariable)
+    .width(myWidthVariable*3)
     .height(300)
     .margins({
       top: 10,

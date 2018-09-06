@@ -3,7 +3,10 @@
 body {
   background-color: black;
   margin: 0;
+  padding: 0;
 }
+
+main
 
 .home {
   background-color: rgba(250, 250, 210, 0.75);
@@ -14,7 +17,6 @@ body {
   position: fixed;
   z-index: 1;
   border-radius:50%;
-
   -webkit-border-radius:50%;
   -moz-border-radius:50%;
   -ms-border-radius:50%;
@@ -23,29 +25,20 @@ body {
 
 /* Header */
 
-header {
+header, footer {
   background-color: black;
   color: lightgoldenrodyellow;
   text-align: center;
   width: 100vw;
+  padding: 0;
+  margin:0;
 }
-
-nav a {
-  border: 10px double black;
-  border-radius:20px;
-  background-color: lightgoldenrodyellow;
-  text-decoration: none;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
-  -ms-border-radius:20px;
-  -o-border-radius:20px;
-  padding: 0 5px
-}
-
-/* Section */
 
 .col-sm-6,
-.col-sm-12 {
+.col-sm-12,
+nav a,
+table td,
+table th {
   background-color: lightgoldenrodyellow;
   border: 10px solid black;
   border-radius: 15px;
@@ -55,12 +48,10 @@ nav a {
   -o-border-radius: 15px;
 }
 
-/* Footer */
-
-footer {
-  text-align: center;
-  color: white;
-  background-color: black;
+nav a {
+  border: 10px double black;
+  padding: 0 5px;
+  text-decoration: none;
 }
 
 /* Alignment */
@@ -79,8 +70,12 @@ p {
   overflow: auto;
 }
 
-#genres g .pie-label-group text,
-#authors .x.axis text {
+#authors-div {
+  display: none;
+}
+
+#authors .x.axis text,
+#genres g .pie-label-group text {
   display: none;
 }
 
@@ -105,7 +100,7 @@ p {
 
 table {
   text-align: left;
-  background-color: gold;
+  background-color: black;
   border-collapse: separate;
   border: 1px;
   width: 100%;
@@ -118,12 +113,14 @@ table {
 table th {
   text-transform: uppercase;
   font-family: "Cabin Sketch", cursive;
-  background-color: lightgoldenrodyellow;
+  border: 0;
+  padding: 5px;
 }
 
 table td {
   text-transform: capitalize;
-  background-color: lightgoldenrodyellow;
+  border: 0;
+  padding: 5px
 }
 
 /*Reset*/
@@ -163,5 +160,8 @@ table td {
   }
   .chart {
     overflow-x: hidden;
+  }
+  #authors-div {
+    display: block;
   }
 }
