@@ -17,13 +17,20 @@
   <!--Scrolling home button-->
   <div class="home">
     <a href="#">
-        <i class="fa fa-home"></i>
+      <i class="fa fa-home"></i>
     </a>
   </div>
   <!--HEADER-->
   <header class="container-fluid">
 
     <h1>My Library</h1>
+    <h3>How it works:</h3>
+    <p class="instructions">Make your selection by clicking / tapping on the charts. You may use one or more charts to
+      make your selection as required.</p>
+    <p class="instructions">The table "Selected Books will display the books relevant to your selection. Is the
+      selection still too big for your liking? Feel free to specify further.</p>
+    <p class="instructions">Scroll back up with one click / tap on the Home symbol.</p>
+    <p class="instructions">Reset your selection with the button underneath the table.</p>
     <!--START NAVBAR-->
     <nav class="row">
       <div class="container-fluid"></div>
@@ -62,7 +69,7 @@
           Selected Books
         </nav-item>
       </a>
-    </div>
+      </div>
       <!--END NAVBAR-->
     </nav>
     <!--END HEADER-->
@@ -73,7 +80,8 @@
       <!--CHARTS-->
       <div class="col-sm-12 col-md-8 chart" id="authors-div">
         <h2>Authors</h2>
-        <p>Not much explanation here, this just shows the balance of books by author. I have some clearly defined favourites,
+        <p>Not much explanation here, this just shows the balance of books by author. I have some clearly defined
+          favourites,
           obviously!
         </p>
         <div id="authors"></div>
@@ -81,7 +89,8 @@
 
       <div class="col-sm-6 col-md-4 chart" id="genres-div">
         <h2>Genre</h2>
-        <p>As you can see, a large part of my personal library consists of fantasy stories, but there are other genres present.</p>
+        <p>As you can see, a large part of my personal library consists of fantasy stories, but there are other genres
+          present.</p>
         <div id="genres"></div>
       </div>
 
@@ -101,19 +110,23 @@
         <ul>
           <li>Male is a male protagonist.</li>
           <li>Female is a female main character.</li>
-          <li>Multiple stands for multiple main characters of different genders. This applies when the story is told from
+          <li>Multiple stands for multiple main characters of different genders. This applies when the story is told
+            from
             multiple characters' point of view or the book is a collection of short stories.</li>
-          <li>None is a book without a protagonist, such as an encyclopedia, a historical account or other educational materials.</li>
+          <li>None is a book without a protagonist, such as an encyclopedia, a historical account or other educational
+            materials.</li>
         </ul>
         <div id="protGender"></div>
-        <p class="note">Note: When applicable, trans and gender-fluid protagonists will also be added here, but I don't currently
+        <p class="note">Note: When applicable, trans and gender-fluid protagonists will also be added here, but I don't
+          currently
           have books with either in my library.</p>
       </div>
 
       <div class="col-sm-6 col-md-4 chart" id="languages-div">
         <h2>Languages</h2>
         <p>As a native speaker of Dutch, of course my library has a number of books in that language.</p>
-        <p>However, my prefered language for reading in recent years has been English. Let's find out how those balance out,
+        <p>However, my prefered language for reading in recent years has been English. Let's find out how those balance
+          out,
           shall we?
         </p>
         <div id="languages"></div>
@@ -134,8 +147,29 @@
   </main>
 
   <!--FOOTER-->
-  <footer>
-    <p>Created by Joke Heyndels.</p>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="instructions">Would you like to use this for your own collection?</p>
+        <p class="instructions">If you are a coder yourself, feel free to fork the
+          <a href="https://github.com/Wings30306/my_library" target="_blank">repository</a>
+          and make it yours!
+          <a href="https://github.com/Wings30306/my_library" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <br>Not a coder? Contact me for more information and / or a quote.
+          <a href=mailto:jo_hannah@outlook.com target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p class="copyright">&copy; Created by Joke Heyndels.</p>
+      </div>
+    </div>
+
+
+
   </footer>
 
   <!--SCRIPTS-->

@@ -3,6 +3,7 @@
 body {
   background-color: black;
   margin: 0;
+  padding:0;
 }
 
 .home a i{
@@ -15,7 +16,21 @@ body {
   z-index: 1;
 }
 
-/* Header */
+h3, .instructions {
+  text-align: left;
+}
+
+.instructions {
+  font-size: 1em;
+}
+
+.instructions a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-style: italic
+}
 
 header, footer {
   background-color: black;
@@ -33,7 +48,7 @@ table td,
 table th {
   background-color: lightgoldenrodyellow;
   border: 10px solid black;
-  border-radius: 15px;
+  border-radius: 15px; 
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -44,6 +59,10 @@ nav a {
   border: 10px double black;
   padding: 0 5px;
   text-decoration: none;
+}
+
+.copyright {
+  text-align: right;
 }
 
 /* Alignment */

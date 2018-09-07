@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 queue()
   .defer(d3.json, "data/mylibrary.json")
   .await(charts);
@@ -208,4 +209,4 @@ function showTable(ndx) {
   .order(d3.ascending)
   .transitionDuration(myTransTimeVariable)
 }
-
+});
