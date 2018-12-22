@@ -198,7 +198,7 @@ function showTable(ndx) {
       .group(function(d) {
         return "";
       })
-      .columns(["title", "author", "language", "genre"])
+      .columns(["author", "number", "title", "language", "genre", "in collection"])
       .size(214)
       .sortBy(function(d) {
         return d.author;

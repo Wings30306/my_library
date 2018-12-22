@@ -205,7 +205,7 @@
     "Gender main character": "male",
     "Adult": "true",
     "genre": "fantasy",
-    "in collection": "false"
+    "in collection": "true"
   },
   {
     "title": "The Cuckoo's Calling",
@@ -271,7 +271,7 @@
     "Gender main character": "female",
     "Adult": "true",
     "genre": "chicklit",
-    "in collection": "false"
+    "in collection": "true"
   },
   {
     "title": "The Little Shop of Happy Ever After",
@@ -2265,17 +2265,6 @@
     "in collection": "true"
   },
   {
-    "title": "The Book Of Spells",
-    "author": "de Pulford",
-    "language": "English",
-    "series": "Stand-Alone",
-    "number": null,
-    "Gender main character": "none",
-    "Adult": "true",
-    "genre": "fantasy",
-    "in collection": "true"
-  },
-  {
     "title": "The Hitchhiker's Guide to the Galaxy",
     "author": "Adams",
     "language": "English",
@@ -2295,17 +2284,6 @@
     "Gender main character": "male",
     "Adult": "true",
     "genre": "science fiction",
-    "in collection": "true"
-  },
-  {
-    "title": "The Book Of Spells ",
-    "author": "de Pulford",
-    "language": "English",
-    "series": "Stand-Alone",
-    "number": null,
-    "Gender main character": "none",
-    "Adult": "true",
-    "genre": "fantasy",
     "in collection": "true"
   },
   {
