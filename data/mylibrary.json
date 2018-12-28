@@ -241,6 +241,17 @@
     "in collection": "true"
   },
   {
+    "title": "Lethal White",
+    "author": "Galbraith",
+    "language": "English",
+    "series": "Series",
+    "number": 4,
+    "Gender main character": "male",
+    "Adult": "true",
+    "genre": "detective",
+    "in collection": "true"
+  },
+  {
     "title": "The Summer Seaside Kitchen",
     "author": "Colgan",
     "language": "English",
@@ -2328,7 +2339,7 @@
     "Gender main character": "female",
     "Adult": "true",
     "genre": "fantasy",
-    "in collection": "false"
+    "in collection": "true"
   },
   {
     "title": "A Second Chance",
@@ -2405,6 +2416,17 @@
     "Gender main character": "female",
     "Adult": "true",
     "genre": "fantasy",
+    "in collection": "true"
+  },
+  {
+    "title": "The Unofficial Harry Potter Cookbook",
+    "author": "Bucholz",
+    "language": "English",
+    "series": "Standalone",
+    "number": null,
+    "Gender main character": "none",
+    "Adult": "true",
+    "genre": "cookbook",
     "in collection": "true"
   }
 ]
